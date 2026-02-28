@@ -65,7 +65,3 @@ Rscript scripts/gene_module_scoring_scRNAseq.R \
 `Seurat`, `SeuratDisk`, `readr`, `tidyr`, `stringr`, `dplyr`, `ggplot2`, `rlang`
 
 Also requires a local `scripts/functions.R` file containing helper functions used by this script (`load_parameters`, among others).
-
----
-
-¿Lo ajustamos en algo antes de subirlo?
