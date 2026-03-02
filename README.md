@@ -1,4 +1,4 @@
-## Gene Module Scoring — `gene_module_scoring_scRNAseq.R`
+## Exploring Jaguar Data — `gene_module_scoring_scRNAseq.R`
 
 In single-cell RNA-seq analysis, once cells have been sequenced, clustered, and annotated, a natural next question is: *how active is a particular biological program in each cell?* That's exactly what this script addresses.
 
