@@ -41,6 +41,7 @@ The script takes a Seurat object (`.rds` or `.h5Seurat`) and a TSV file listing 
 ### Usage
 The script was adapted for execution within RStudio in a Microsoft Windows environment. To this end, the required variables were specifically declared, allowing for an interactive and documented workflow.
 
+```r
 # RStudio/Windows execution configuration
 query_dir            <- "D:/HORAS NO LECTIVAS/PROYECTO JAGUAR/gene_module_score/jaguar_atlas_seurat.rds"
 gene_sets_tsv        <- "D:/HORAS NO LECTIVAS/PROYECTO JAGUAR/gene_module_score/gene_set_list.tsv"
