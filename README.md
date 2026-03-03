@@ -64,7 +64,7 @@ Also requires a local `scripts/functions.R` file containing helper functions use
 ## My Contributions
 
 * **Gene Set Selection:** Defined the specific gene sets used to evaluate immune activation within the Jaguar Atlas dataset.
-* **Custom Visualizations:** Developed specific plots, including site-specific boxplots (Argentina, Chile, Peru) and activation state violin plots.
+* **Custom Visualizations:** Developed specific plots including site-specific boxplots (Argentina, Chile, Peru), activation state violin plots, and UMAPs showing exactly where signatures turn on for CD4, CD8, and NK cells.
 * **Script Optimization:** Implemented automated cell-type subsetting and adaptive `nbin` parameter adjustment to ensure script stability across different dataset sizes.
 
 
