@@ -52,13 +52,6 @@ print_histograms     <- TRUE
 print_statistics     <- TRUE
 ```
 
-## My Contributions
-
-* **Gene Set Selection:** Defined the specific gene sets used to evaluate immune activation within the Jaguar Atlas dataset.
-* **Custom Visualizations:** Developed specific plots, including site-specific boxplots (Argentina, Chile, Peru) and activation state violin plots.
-* **Script Optimization:** Implemented automated cell-type subsetting and adaptive `nbin` error handling for the Jaguar Atlas.
-
-
 ### Dependencies
 
 `Seurat`, `SeuratDisk`, `readr`, `tidyr`, `stringr`, `dplyr`, `ggplot2`, `rlang`
@@ -68,12 +61,17 @@ Also requires a local `scripts/functions.R` file containing helper functions use
 ---
 
 
-
 ## Authors
 
 * **Original Authors:** Julieth López ([julalopezcas@unal.edu.co](mailto:julalopezcas@unal.edu.co)) and Ania Lorenc ([al16@sanger.ac.uk](mailto:al16@sanger.ac.uk)).
 * **Adapted and Optimized by:** Dámaris Esquén ([esquendamaris@gmail.com](mailto:esquendamaris@gmail.com) / [db36@sanger.ac.uk](mailto:db36@sanger.ac.uk)).
 * **Project:** JAGUAR (2025).
+
+## My Contributions
+
+* **Gene Set Selection:** Defined the specific gene sets used to evaluate immune activation within the Jaguar Atlas dataset.
+* **Custom Visualizations:** Developed specific plots, including site-specific boxplots (Argentina, Chile, Peru) and activation state violin plots.
+* **Script Optimization:** Implemented automated cell-type subsetting and adaptive `nbin` error handling for the Jaguar Atlas.
 
 
 ---
