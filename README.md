@@ -13,6 +13,7 @@ The script takes a Seurat object (`.rds` or `.h5Seurat`) and a TSV file listing 
 - Calculates module scores per cell using Seurat's `AddModuleScore`, with an automatic fallback that adjusts the `nbin` parameter if the function fails (useful for small datasets)
 - Normalizes scores within each Azimuth cell type group, so scores are comparable across modules
 - Generates histograms showing the distribution of each module score per cell type
+- Custom UMAP plots showing exactly where activation signatures turn on for CD4, CD8, and NK cells using custom colors
 - Produces a violin plot showing the overlap between activation states (resting, early activation, and activated CD cells)
 - Produces a boxplot comparing activation intensity across collection sites: Argentina, Chile, and Peru
 - Saves a summary statistics table (min, mean, median, SD, max) per module and cell type
@@ -34,6 +35,7 @@ The script takes a Seurat object (`.rds` or `.h5Seurat`) and a TSV file listing 
 
 - `module_score_statistics.csv` — summary statistics per module and cell type
 - `hist_module_score_<module>.png` — score distribution histograms
+- `UMAP_<cell_type>_CD4modules.png` — UMAP plots showing the activation level for each cell type
 - `CD4_Overlap_Violin.png` — violin plot of activation state overlap
 - `FINAL_intensity_boxplot.png` — boxplot of activation intensity by site and cell type
 - `*_mod.rds` or `*_gene_scores.csv.gz` — annotated Seurat object or scores table, depending on `save_toseurat`
@@ -54,7 +56,7 @@ print_statistics     <- TRUE
 
 ### Dependencies
 
-`Seurat`, `SeuratDisk`, `readr`, `tidyr`, `stringr`, `dplyr`, `ggplot2`, `rlang`
+`Seurat`, `SeuratDisk`, `readr`, `tidyr`, `stringr`, `dplyr`, `ggplot2`, `rlang`, `patchwork`
 
 Also requires a local `scripts/functions.R` file containing helper functions used by this script (`load_parameters`, among others).
 
