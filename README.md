@@ -42,7 +42,7 @@ The script takes a Seurat object (`.rds` or `.h5Seurat`) and a TSV file listing 
 The script was adapted for execution within RStudio in a Microsoft Windows environment. To this end, the required variables were specifically declared, allowing for an interactive and documented workflow.
 
 ```r
-# RStudio/Windows execution configuration
+# Example for testing
 query_dir            <- "D:/HORAS NO LECTIVAS/PROYECTO JAGUAR/gene_module_score/jaguar_atlas_seurat.rds"
 gene_sets_tsv        <- "D:/HORAS NO LECTIVAS/PROYECTO JAGUAR/gene_module_score/gene_set_list.tsv"
 outdir               <- "D:/HORAS NO LECTIVAS/PROYECTO JAGUAR/gene_module_score/results/"
@@ -50,28 +50,6 @@ annotation_reference <- "Azimuth.predicted.celltype.l1"
 save_toseurat        <- TRUE
 print_histograms     <- TRUE
 print_statistics     <- TRUE
-
-```bash
-Rscript scripts/gene_module_scoring_scRNAseq.R <input_yaml> <output_directory>
-```
-
-Or with explicit arguments:
-
-```bash
-Rscript scripts/gene_module_scoring_scRNAseq.R \
-  --query_dir jaguar_atlas.rds \
-  --gene_sets gene_set_list.tsv \
-  --annotation_reference Azimuth.predicted.celltype.l1 \
-  --save_toseurat TRUE \
-  --print_histograms TRUE \
-  --print_statistics TRUE \
-  --outdir results/
-```
-
-
-
-> **Note:** If running on the Sanger Institute cluster, load the required environment first:
-> `module load HGI/softpack/users/hn4/seurat5/7.0`
 
 ### Dependencies
 
