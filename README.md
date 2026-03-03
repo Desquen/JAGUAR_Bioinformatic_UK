@@ -50,6 +50,7 @@ annotation_reference <- "Azimuth.predicted.celltype.l1"
 save_toseurat        <- TRUE
 print_histograms     <- TRUE
 print_statistics     <- TRUE
+```
 
 ### Dependencies
 
