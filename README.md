@@ -54,9 +54,10 @@ print_statistics     <- TRUE
 
 ## My Contributions
 
-* **Curated Gene Sets:** Manually curated the custom immune activation gene lists for T and NK cell scoring.
+* **Gene Set Selection:** Defined the specific gene sets used to evaluate immune activation within the Jaguar Atlas dataset.
 * **Custom Visualizations:** Developed specific plots, including site-specific boxplots (Argentina, Chile, Peru) and activation state violin plots.
 * **Script Optimization:** Implemented automated cell-type subsetting and adaptive `nbin` error handling for the Jaguar Atlas.
+
 
 ### Dependencies
 
